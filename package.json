@@ -1,0 +1,28 @@
+{
+  "name": "bixitime-wallboard",
+  "version": "1.0.0",
+  "description": "A wallboard for displaying the number of bikes at a Bixi station.",
+  "main": "wallboard.js",
+  "scripts": {
+    "start": "node wallboard.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/euoia/bixitime-wallboard.git"
+  },
+  "author": "James Pickard <james.pickard@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/euoia/bixitime-wallboard/issues"
+  },
+  "homepage": "https://github.com/euoia/bixitime-wallboard#readme",
+  "dependencies": {
+    "co-request": "^0.2.1",
+    "cogent": "^1.0.1",
+    "koa": "^0.21.0",
+    "koa-hbs": "^0.7.0",
+    "request": "^2.55.0",
+    "winston": "^1.0.0"
+  }
+}
