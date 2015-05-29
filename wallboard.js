@@ -48,10 +48,18 @@ app.use(function *(){
 	}
 
 	var station = response.body[0];
-	var color = 'green';
-	if (station.bikes <= 5) {
-		color = 'red';
-	}
+
+    //We should use percentages based on total number of stations
+	var color = '#5cb85c';
+	if (station.bikes <= 10) {
+    	if (station.bikes <= 5) {
+		    color = '#d9534f';
+	    }
+        color = '#f0ad4e';
+    }
+
+
+
 
 	yield this.render('wallboard', {
 		title: station.name,

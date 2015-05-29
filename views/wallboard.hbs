@@ -1,22 +1,61 @@
 <html>
-	<head>
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
-		<title>{{title}}</title>
-		<style type="text/css" media="screen">
-			body {
-				background-color: black;
-				width: 100%;
-				text-align: center;
-			}
-			h1 {
-				font-size: 600px;
-				font-family: Lato;
-				color: {{color}};
-			}
-		</style>
-	</head>
-	<body>
-		<h1>{{bikes}}</h1>
-	</body>
-</html>`;
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+
+        
+        
+        <title>{{title}}</title>
+        <style type="text/css" media="screen">
+            body {
+                background-color: #111;
+                width: 80%;
+                margin:10px auto;
+                text-align: center;
+                font-family: Lato;
+            }
+            h1 {
+                color: {{color}};
+                line-height:1;
+                margin:0;
+            }
+
+            h3 {
+                color:#fff;
+                line-height:1;
+                margin:0;
+            }
+
+            .slabtexted .slabtext {
+                display:-moz-inline-box;
+                display:inline-block;
+                white-space:nowrap;
+
+            }
+            .slabtextinactive .slabtext {
+                display:inline;
+                white-space:normal;
+                font-size:1em !important;
+                letter-spacing:inherit !important;
+                word-spacing:inherit !important;
+                *letter-spacing:0 !important;
+                *word-spacing:0 !important;
+            }
+            .slabtextdone .slabtext {
+                display:block;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>{{title}}</h3>
+        <h1>{{bikes}}</h1>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slabText/2.3/jquery.slabtext.min.js"></script>
+
+        <script type="text/javascript">
+            $('h1').slabText();
+            $('h3').slabText();
+        </script>
+    </body>
+</html>
 
